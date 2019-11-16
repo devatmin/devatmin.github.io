@@ -6,15 +6,56 @@
 		<link rel="stylesheet" type="text/css" href="assets/custom.css">
 	</head>
 	<body>
-		<header>
+		<header class="mb-80">
 			<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
 			<a class="navbar-brand" href="#">
 				D E V A T M I N
 			</a>
 		</nav>
 		</header>
-		<main>
-			<h3>Content will be here...!</h3>
+		<main class="container">
+			<h3>Topics</h3>
+			<div class="ml-5">
+
+				<!-- Ruby Docs -->
+				<div class="accordion" id="rubyaccr">
+				  <div class="card">
+				    <div class="card-header" id="rubycard">
+				      <h2 class="mb-0">
+				        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#rubydocs" aria-expanded="true" aria-controls="rubydocs">
+				          Ruby
+				        </button>
+				      </h2>
+				    </div>
+
+				    <div id="rubydocs" class="collapse" aria-labelledby="rubycard" data-parent="#rubyaccr">
+				      <div class="card-body">
+				        <a href="docs/test.html">Test page now</a>
+				      </div>
+				    </div>
+				  </div>
+				</div>
+
+				<!-- Rails Docs -->
+				<div class="accordion" id="railsaccr">
+				  <div class="card">
+				    <div class="card-header" id="railscard">
+				      <h2 class="mb-0">
+				        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#railsdocs" aria-expanded="true" aria-controls="railsdocs">
+				          Rails
+				        </button>
+				      </h2>
+				    </div>
+
+				    <div id="railsdocs" class="collapse" aria-labelledby="railscard" data-parent="#railsaccr">
+				      <div class="card-body">
+				        <a href="docs/test.html">Test page now</a>
+				      </div>
+				    </div>
+				  </div>
+				</div>
+
+			</div>
 		</main>
 
 		<footer class="footer">
@@ -22,5 +63,7 @@
 		</footer>
 
 	</body>
+	<script type="text/javascript" src="assets/jquery-3.3.1.slim.min.js"></script>
+	<script type="text/javascript" src="assets/popper.min.js"></script>
 	<script type="text/javascript" src="assets/bootstrap.min.js"></script>
 </html>
