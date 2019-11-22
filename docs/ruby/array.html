@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Ruby array</title>
+	</head>
+	<body>
+		<h1>Ruby - array - reusables </h1>
+		<h4>Finding number of duplicates in array</h4>
+		<pre>
+			array = ["a", "b", "a", "c"]
+			array.inject(Hash.new(0)) { |total, e| total[e] += 1 ;total}
+
+			<em>Output: {"a" => 2, "b" => 1, "c" = 1}</em>
+		</pre>
+	</body>
+</html>
